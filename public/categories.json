@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Mediterranean Sunset Villa",
+      "segment_name": "Villa",
+      "description": "The Mediterranean Sunset Villa exudes timeless elegance and charm, nestled in the picturesque setting of Sunset Drive, Marbella. This exquisite villa spans 4800 square feet and features vibrant, earth-toned colors, arched windows, and lush, meticulously landscaped gardens. The property includes a private garden where you can enjoy the serenity of nature, as well as an infinity pool that offers breathtaking views of the surrounding landscape. Inside, the villa boasts a spacious home theater for entertainment, and a gourmet kitchen equipped with top-of-the-line appliances, perfect for hosting lavish dinners or casual family meals. With its unique combination of Mediterranean architectural elements and modern luxury, this villa is designed to offer a lifestyle of tranquility and opulence. Ideal for those seeking a retreat that combines comfort with aesthetic appeal, the Mediterranean Sunset Villa is truly a gem in the heart of Marbella.",
+      "price": "11,500,000",
+      "status": "sale",
+      "area": "4800 sq ft",
+      "location": "Sunset Drive, Marbella",
+      "facilities": ["Private Garden", "Infinity Pool", "Home Theater", "Gourmet Kitchen"],
+      "image": "https://ibb.co.com/89GknKZ"
+    },
+    {
+      "id": 2,
+      "estate_title": "Futuristic Mountain Retreat",
+      "segment_name": "Modern Villa",
+      "description": "Set in the serene and picturesque Elysian Peaks, Switzerland, the Futuristic Mountain Retreat is an architectural marvel. Spanning 5500 square feet, this villa's design features large, curved glass windows that seamlessly blend the interior with the breathtaking mountain views. The open, circular architectural style promotes a sense of continuity and flow throughout the living spaces. This luxurious home is equipped with a swimming pool, offering a refreshing escape in the warmer months. A private balcony provides a perfect spot for morning coffee or evening relaxation, while the landscaped garden adds a touch of nature to the modern design. The home theater is ideal for movie nights or entertaining guests. Every detail of this villa has been thoughtfully designed to create a harmonious living environment that caters to both relaxation and modern living. Perfect for those who appreciate innovative design and stunning natural beauty, the Futuristic Mountain Retreat offers a unique living experience.",
+      "price": "15,200,000",
+      "status": "sale",
+      "area": "5500 sq ft",
+      "location": "Elysian Peaks, Switzerland",
+      "facilities": ["Swimming Pool", "Private Balcony", "Landscaped Garden", "Home Theater"],
+      "image": "https://ibb.co.com/zHzgYST"
+    },
+    {
+      "id": 3,
+      "estate_title": "Victorian Dream Home",
+      "segment_name": "Victorian",
+      "description": "Nestled on Heritage Lane in the heart of San Francisco, the Victorian Dream Home embodies classic elegance and historical charm. This grand residence spans 6000 square feet and features a wrap-around porch, multiple gables, and intricate decorative trim that capture the essence of Victorian architecture. Inside, the home offers a warm and inviting atmosphere with spacious living areas and high ceilings. The beautifully lit rooms are perfect for both everyday living and entertaining. The property is surrounded by lush greenery and large, mature trees that provide a sense of tranquility and privacy. A spacious garden offers ample space for outdoor activities and relaxation. The home theater is perfect for movie nights, while the gourmet kitchen is equipped with modern appliances and provides the ideal setting for preparing delicious meals. This Victorian home is a rare gem, offering a blend of historical charm and modern amenities, making it a perfect sanctuary for those who appreciate timeless beauty and comfort.",
+      "price": "7,800,000",
+      "status": "sale",
+      "area": "6000 sq ft",
+      "location": "Heritage Lane, San Francisco",
+      "facilities": ["Wrap-around Porch", "Spacious Garden", "Home Theater", "Gourmet Kitchen"],
+      "image": "https://ibb.co.com/3f5xjjX"
+    },
+    {
+      "id": 4,
+      "estate_title": "Contemporary Suburban Home",
+      "segment_name": "Suburban Home",
+      "description": "Located in the charming Maple Grove, Vermont, the Contemporary Suburban Home offers a perfect blend of modern design and suburban comfort. This two-story residence spans 4200 square feet and features a pitched roof, large windows, and a harmonious combination of white and wooden exterior finishes. The balcony with glass railings provides a serene space to enjoy the picturesque surroundings. Inside, the home boasts an open floor plan with spacious living areas designed for comfort and functionality. The modern kitchen is equipped with state-of-the-art appliances and ample counter space, perfect for culinary enthusiasts. The landscaped garden and neatly trimmed bushes add to the home's curb appeal and offer a peaceful outdoor retreat. Additional amenities include a home office, ideal for remote work or study, and a comfortable living space that caters to both family life and entertaining. This suburban home is designed to provide a tranquil and stylish living environment, making it a perfect choice for families seeking a contemporary lifestyle.",
+      "price": "9,000,000",
+      "status": "sale",
+      "area": "4200 sq ft",
+      "location": "Maple Grove, Vermont",
+      "facilities": ["Balcony", "Landscaped Garden", "Modern Kitchen", "Home Office"],
+      "image": "https://ibb.co.com/1McxhFB"
+    },
+    {
+      "id": 5,
+      "estate_title": "Modern Glass House",
+      "segment_name": "Modern",
+      "description": "Situated in the sunny locale of Palm Springs, California, the Modern Glass House is a testament to contemporary architectural excellence. This minimalist home spans 5800 square feet and features an abundance of large glass windows that flood the interior with natural light. The open-plan living area is designed for both comfort and functionality, with a seamless flow between indoor and outdoor spaces. The cubic structure of the house adds a unique, modern touch to the overall design. Outside, a swimming pool with surrounding outdoor furniture provides a perfect spot for relaxation and entertainment. The house is illuminated warmly from the inside, creating a cozy and inviting ambiance. The outdoor lounge area is ideal for social gatherings or quiet evenings under the stars. Every detail of the Modern Glass House has been carefully considered to offer a luxurious and stylish living experience, making it a dream home for those who appreciate modern design and elegance.",
+      "price": "12,500,000",
+      "status": "sale",
+      "area": "5800 sq ft",
+      "location": "Palm Springs, California",
+      "facilities": ["Swimming Pool", "Open-Plan Living Area", "Large Windows", "Outdoor Lounge"],
+      "image": "https://ibb.co.com/VpFLsfH"
+    },
+    {
+      "id": 6,
+      "estate_title": "Tropical Island Villa",
+      "segment_name": "Private Island",
+      "description": "Located on the stunning Paradise Island in the Bahamas, the Tropical Island Villa offers a luxurious escape in a breathtaking setting. This expansive villa spans 7000 square feet and is surrounded by turquoise waters and white sandy beaches. The lush tropical vegetation provides a sense of seclusion and tranquility. The villa features spacious open-air living areas that blend seamlessly with the natural surroundings. An infinity pool offers a refreshing respite from the tropical heat and stunning views of the ocean. Direct access to the private beach allows for easy enjoyment of the pristine shoreline. The outdoor dining area is perfect for alfresco meals, while the luxury spa provides a relaxing retreat. Every aspect of the Tropical Island Villa has been designed to offer an unparalleled living experience, making it the ultimate destination for those seeking privacy, luxury, and natural beauty.",
+      "price": "22,000,000",
+      "status": "sale",
+      "area": "7000 sq ft",
+      "location": "Paradise Island, Bahamas",
+      "facilities": ["Infinity Pool", "Private Beach Access", "Outdoor Dining Area", "Luxury Spa"],
+      "image": "https://ibb.co.com/Fgp9P4W"
+    }
+  ]
+  

@@ -6,7 +6,9 @@ const NavBar = () => {
     const navLinks = <>
         <li><NavLink to='/'>Home</NavLink> </li>
         <li><NavLink to='/updateProfile'>Update Profile</NavLink> </li>
-        <li><NavLink to='/userProfile'>user Profile</NavLink> </li>
+        <li><NavLink to='/userProfile'>user Profile</NavLink> </li> 
+        <li><NavLink to='/login'>Login</NavLink> </li> 
+        <li><NavLink to='/registration'>Registration</NavLink> </li> 
     </>
 
 
@@ -34,7 +36,7 @@ const NavBar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Majestic Mansions</a>
+                <a className="btn btn-ghost text-base lg:text-xl ">Majestic Mansions</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -42,7 +44,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <button><NavLink to='/login'>Logout</NavLink></button>
             </div>
         </div>
     )

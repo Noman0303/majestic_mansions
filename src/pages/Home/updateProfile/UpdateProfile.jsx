@@ -1,9 +1,11 @@
 import React from 'react'
+import NavBar from '../shared/NavBar/NavBar'
 
 const UpdateProfile = () => {
   return (
     <div>
-        This is update profile page
+      <NavBar></NavBar>
+      <h2 className="text-xl">This is update profile page</h2>
     </div>
   )
 }

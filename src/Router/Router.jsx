@@ -5,6 +5,8 @@ import Root from '../layouts/Root/Root';
 import Home from '../pages/Home/Home';
 import UpdateProfile from '../pages/Home/updateProfile/UpdateProfile';
 import UserProfile from '../pages/userProfile/UserProfile';
+import Login from '../pages/login/Login';
+import Registration from '../pages/registration/Registration';
 
 const router = createBrowserRouter([
     {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
             {
                 path: "/userProfile",
                 element: <UserProfile></UserProfile>
+            },
+            {
+                path: "/login",
+                element: <Login></Login>
+            },
+            {
+                path: "/registration",
+                element: <Registration></Registration>
             }
         ]
     },
