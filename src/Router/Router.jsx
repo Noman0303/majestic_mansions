@@ -5,8 +5,9 @@ import Root from '../layouts/Root/Root';
 import Home from '../pages/Home/Home';
 import UpdateProfile from '../pages/Home/updateProfile/UpdateProfile';
 import UserProfile from '../pages/userProfile/UserProfile';
-import Login from '../pages/login/Login';
+
 import Registration from '../pages/registration/Registration';
+import Login from '../pages/login/Login';
 
 const router = createBrowserRouter([
     {

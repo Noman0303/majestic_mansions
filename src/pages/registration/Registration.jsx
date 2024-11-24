@@ -1,10 +1,12 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import NavBar from '../Home/shared/NavBar/NavBar'
 import { AuthContext } from '../../Provider/AuthProvider';
+import { FaEye,FaEyeSlash } from "react-icons/fa";
 
 const Registration = () => {
     
     const {createUser} = useContext(AuthContext);
+    const [showPassword,setShowPassword] = useState(false);
 
     const handleRegister = e => {
         e.preventDefault();
@@ -48,11 +50,24 @@ const Registration = () => {
                                 </label>
                                 <input type="email" name="email" placeholder="email" className="input input-bordered" required />
                             </div>
-                            <div className="form-control">
+                            <div className="form-control relative">
+                                
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" name='password' placeholder="password" className="input input-bordered" required />
+
+                                <input type={showPassword? "text" : "password"}
+                                name='password' 
+                                placeholder="password" 
+                                className="input input-bordered" 
+                                required />
+
+                                <span className='absolute bottom-12 right-3' onClick={()=>setShowPassword(!showPassword)}>
+                                    {
+                                        showPassword? <FaEyeSlash />:<FaEye />
+                                    }
+                                </span>
+
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
