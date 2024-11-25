@@ -3,6 +3,9 @@ import NavBar from '../Home/shared/NavBar/NavBar'
 import { AuthContext } from '../../Provider/AuthProvider';
 import { FaEye,FaEyeSlash } from "react-icons/fa";
 
+import { ToastContainer, toast } from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css';
+
 const Registration = () => {
     
     const {createUser} = useContext(AuthContext);
@@ -19,15 +22,15 @@ const Registration = () => {
 
         createUser(email, password)
         .then(result =>{
-            console.log(result.user)
+            console.log(result.user);
+            toast.success('Registration successful! Welcome!', { autoClose: 3000})
         })
         .catch(error =>{
-            console.error(error)
+            console.error(error);
+            toast.error('Registration not successful. Please try again!', { autoClose: 3000 });
         })
 
     };
-
-
 
     return (
         <div>
@@ -62,15 +65,13 @@ const Registration = () => {
                                 className="input input-bordered" 
                                 required />
 
-                                <span className='absolute bottom-12 right-3' onClick={()=>setShowPassword(!showPassword)}>
+                                <span className='absolute bottom-4 right-3' onClick={()=>setShowPassword(!showPassword)}>
                                     {
                                         showPassword? <FaEyeSlash />:<FaEye />
                                     }
                                 </span>
 
-                                <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
+                                
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Register</button>
@@ -79,6 +80,7 @@ const Registration = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     )
 }
