@@ -18,7 +18,7 @@ const Login = () => {
 
 
 
-    const { signInUser, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
+    const {signInUser, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
 
 
@@ -73,6 +73,7 @@ const Login = () => {
     return (
         <div>
             <NavBar></NavBar>
+
 
             <div>
                 <div className=" flex-col">

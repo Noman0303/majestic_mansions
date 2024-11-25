@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { AuthContext } from '../../../../Provider/AuthProvider'
 
@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const NavBar = () => {
 
     const { user, logOut } = useContext(AuthContext);
+    const [isHovered, setIshovered] = useState(false);
 
     const handleLogOut = () => {
         logOut()
@@ -66,12 +67,20 @@ const NavBar = () => {
                 <div className="navbar-end  ">
                     {
                         user ?
-                            <>
-                                <span >{user.email}</span>
-                                <a className="btn btn-sm" onClick={handleLogOut}>Sign Out</a>
-                            </>
+                            <div className="flex items-center space-x-4">
+                                <span className='relative' onMouseEnter={() => setIshovered(true)} onMouseLeave={() => setIshovered(false)}>
+                                    <img src={user.photoURL} className="rounded-full w-8 h-8 inline-block" />
+                                    {isHovered && (
+                                        <span className='absolute bottom-0 left-0 w-auto p-1 text-xs text-white bg-black rounded-md'>
+                                            {user.email}
+                                        </span>
+                                    )}
+                                </span>
+                                <a className="btn btn-sm" onClick={handleLogOut}>Log Out</a>
+                            </div>
                             :
-                            <Link to='/' >
+                            <Link to='/login' >
+                                <button className='btn btn-sm'>Log in</button>
                             </Link>
                     }
                 </div>
