@@ -6,33 +6,39 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-green-950 text-base text-white p-10">
-      <nav>
+
+
+    <div className='grid grid-cols-3 bg-green-950 text-base text-white p-4'>
+      <div>
         <h6 className="footer-title">Services</h6>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
-      </nav>
+        <ul>
+          <li><a className="link link-hover">Branding</a></li>
+          <li><a className="link link-hover">Design</a></li>
+          <li><a className="link link-hover">Marketing</a></li>
+          <li><a className="link link-hover">Advertisement</a></li>
+        </ul>
+      </div>
 
-      <nav>
+      <div>
         <h6 className="footer-title">Company</h6>
-        <NavLink className="link link-hover" to='/aboutUs'>About us</NavLink>
-        <NavLink className="link link-hover" to='/contact'>Contact</NavLink>
-        <NavLink className="link link-hover" to='/jobs'>Jobs</NavLink>
+        <ul>
+          <li><NavLink className="link link-hover" to='/aboutUs'>About us</NavLink></li>
+          <li><NavLink className="link link-hover" to='/contact'>Contact</NavLink></li>
+          <li><NavLink className="link link-hover" to='/jobs'>Jobs</NavLink></li>
+        </ul>
+      </div>
 
-      </nav>
-
-      <nav>
+      <div>
         <h6 className="footer-title">Social</h6>
-        <div className="grid grid-flow-col gap-4">
-          <a href=""><FaSquareXTwitter className='w-8 h-8  ' /></a>
-          <a href="" ><FaFacebook className='w-8 h-8 '/></a>
-          <a href=""><FaYoutube className='w-8 h-8' /></a>
+        <ul className='lg:flex md:flex gap-4'>
+          <li><a href=""><FaSquareXTwitter className='w-8 h-8  ' /></a></li>
+          <li><a href="" ><FaFacebook className='w-8 h-8 ' /></a></li>
+          <li><a href=""><FaYoutube className='w-8 h-8' /></a></li>
+        </ul>
+      </div>
 
-        </div>
-      </nav>
-    </footer>
+    </div>
+
   )
 }
 

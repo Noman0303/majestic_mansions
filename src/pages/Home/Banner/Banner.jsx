@@ -1,35 +1,53 @@
-import React from 'react'
+import React from 'react';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
-
 // Import Swiper styles
+
 import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
+// import required modules
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const Banner = () => {
-  return (
-    <div>
+    return (
+        <div >
 
-    <Swiper
-      spaceBetween={10}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide><img src="https://i.ibb.co.com/GHjQ7Wq/1.jpg" alt="1" border="0"/></SwiperSlide>
-      <SwiperSlide><img src="https://i.ibb.co.com/MR29VBr/2.jpg" alt="2" border="0"/></SwiperSlide>
-      <SwiperSlide><img src="https://i.ibb.co.com/SvGCcVd/3.jpg" alt="3" border="0"/></SwiperSlide>
-      <SwiperSlide><img src="https://i.ibb.co.com/Rb7C60Y/4.jpg" alt="4" border="0"/></SwiperSlide>
-      <SwiperSlide><img src="https://i.ibb.co.com/Xx1dgwZ/5.jpg" alt="5" border="0"/></SwiperSlide>
-      <SwiperSlide><img src="https://i.ibb.co.com/R4d8Cps/6.jpg" alt="6" border="0"/></SwiperSlide>
-      <SwiperSlide><img src="https://i.ibb.co.com/3hPt9g4/7.jpg" alt="7" border="0"/></SwiperSlide>
-      <SwiperSlide><img src="https://i.ibb.co.com/HTXggZs/8.jpg" alt="8" border="0"/></SwiperSlide>
-      
-    </Swiper>
-    </div>
-    
-  )
+            <Swiper
+                effect={'coverflow'}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={2}
+
+                coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                }}
+
+                pagination={true}
+                modules={[EffectCoverflow, Pagination]}
+                className="mySwiper"
+            >
+                <SwiperSlide><img src="https://i.ibb.co.com/y6DVsDj/outdoor-deck-2.jpg" className='w-auto' /></SwiperSlide>
+                <SwiperSlide><img src="https://i.ibb.co.com/BK4shGB/todd-kent-178j8t-Jr-Nlc-unsplash.jpg" className='w-auto ' /></SwiperSlide>
+                <SwiperSlide><img src="https://i.ibb.co.com/mhMKXMy/abby-rurenko-u-OYak90r4-L0-unsplash.jpg" className='w-auto ' /></SwiperSlide>
+                <SwiperSlide><img src="https://i.ibb.co.com/236kNS4/evelyn-paris-XJn-P4-L958ds-unsplash.jpg" className='w-auto ' /></SwiperSlide>
+                <SwiperSlide><img src="https://i.ibb.co.com/n03ZtBL/scott-webb-1ddol8rg-UH8-unsplash.jpg" className='w-auto ' /></SwiperSlide>
+                <SwiperSlide><img src="https://i.ibb.co.com/znjkr9S/aerial-view-small-cabin-hidden-dense-forest-greenery.jpg" className='w-auto ' /></SwiperSlide>
+                <SwiperSlide><img src="https://i.ibb.co.com/hMmSB0r/beautiful-shot-forest-cabin-reflections-pond.jpg" className='w-auto ' /></SwiperSlide>
+                <SwiperSlide><img src="https://i.ibb.co.com/2KsM5nm/modern-cabin-cloud-forest-landscape.jpg" className='w-auto ' /></SwiperSlide>
+
+            </Swiper>
+        </div>
+
+    )
 }
 
 export default Banner

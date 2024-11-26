@@ -1,9 +1,7 @@
 import React from 'react'
 import {createBrowserRouter} from "react-router-dom";
-
 import Root from '../layouts/Root/Root';
 import Home from '../pages/Home/Home';
-
 import UserProfile from '../pages/userProfile/UserProfile';
 import Registration from '../pages/registration/Registration';
 import Login from '../pages/login/Login';
@@ -19,7 +17,8 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader:()=> fetch('./categories.json')
             },
             {
                 path: "/updateProfile",
