@@ -1,11 +1,13 @@
 import React, { useContext, useState } from 'react'
-import NavBar from '../Home/shared/NavBar/NavBar'
+
 import { AuthContext } from '../../Provider/AuthProvider';
 import { FaEye,FaEyeSlash } from "react-icons/fa";
 
 import { ToastContainer, toast } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from 'react-router-dom';
+import NavBar from '../shared/NavBar/NavBar';
+
 
 const Registration = () => {
     
@@ -56,7 +58,7 @@ const Registration = () => {
 
             <div className="hero ">
                 <div className="hero-content flex-col lg:flex-row-reverse " >
-                    <div className="text-center lg:text-left">
+                    <div className="text-center lg:ml-6 lg:text-left">
                         <h1 className="text-5xl font-bold">Welcome to Majestic Mansions!</h1>
                         <p className="py-6">
                         We're delighted to have you here. Joining our community brings you one step closer to experiencing the luxury and comfort of Majestic Mansions. Our registration process is quick and easy, ensuring that you can start enjoying the benefits without any hassle.
@@ -73,7 +75,7 @@ const Registration = () => {
                         <p className='py-6'><span className='font-semibold'>Let’s Get Started</span> Your journey to finding the perfect home begins here. We can’t wait to welcome you!</p>
 
                     </div>
-                    <div className="card bg-base-100 w-full shadow-2xl">
+                    <div className="card bg-base-100 w-full max-w-sm shadow-2xl">
                         <form className="card-body" onSubmit={handleRegister}>
 
                             <div className="form-control">

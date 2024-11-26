@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { AuthContext } from '../../../../Provider/AuthProvider'
+import { AuthContext } from '../../../Provider/AuthProvider'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -28,7 +28,8 @@ const NavBar = () => {
         <li><NavLink to='/updateProfile'>Update Profile</NavLink> </li>
         <li><NavLink to='/userProfile'>user Profile</NavLink> </li>
         <li><NavLink to='/login'>Login</NavLink> </li>
-        <li><NavLink to='/registration'>Registration</NavLink> </li>
+        <li><NavLink to='/registration'>Registration</NavLink></li>
+
     </>
 
 

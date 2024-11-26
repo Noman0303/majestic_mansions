@@ -1,5 +1,6 @@
 import React from 'react'
-import NavBar from '../Home/shared/NavBar/NavBar'
+import NavBar from '../shared/NavBar/NavBar'
+
 
 const UserProfile = () => {
   return (

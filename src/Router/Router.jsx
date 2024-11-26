@@ -3,11 +3,14 @@ import {createBrowserRouter} from "react-router-dom";
 
 import Root from '../layouts/Root/Root';
 import Home from '../pages/Home/Home';
-import UpdateProfile from '../pages/Home/updateProfile/UpdateProfile';
-import UserProfile from '../pages/userProfile/UserProfile';
 
+import UserProfile from '../pages/userProfile/UserProfile';
 import Registration from '../pages/registration/Registration';
 import Login from '../pages/login/Login';
+import AboutUs from '../pages/AboutUs/AboutUs';
+import UpdateProfile from '../pages/updateProfile/UpdateProfile';
+import Contact from '../pages/contact/Contact';
+import Jobs from '../pages/jobs/Jobs';
 
 const router = createBrowserRouter([
     {
@@ -33,6 +36,18 @@ const router = createBrowserRouter([
             {
                 path: "/registration",
                 element: <Registration></Registration>
+            },
+            {
+                path: "/aboutUs",
+                element: <AboutUs></AboutUs>
+            },
+            {
+                path: "/contact",
+                element: <Contact></Contact>
+            },
+            {
+                path: "/jobs",
+                element: <Jobs></Jobs>
             }
         ]
     },

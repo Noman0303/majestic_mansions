@@ -1,14 +1,16 @@
 import React, { useContext, useState } from 'react'
-import NavBar from '../Home/shared/NavBar/NavBar'
+
 import { AuthContext } from '../../Provider/AuthProvider'
 import { FaEye, FaEyeSlash} from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
 import { IoLogoGithub } from "react-icons/io";
-import Footer from '../Home/shared/footer/Footer';
+
 
 import { ToastContainer, toast } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css';
+import NavBar from '../shared/NavBar/NavBar';
+import Footer from '../shared/footer/Footer';
 
 
 
