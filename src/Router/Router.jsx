@@ -9,6 +9,8 @@ import AboutUs from '../pages/AboutUs/AboutUs';
 import UpdateProfile from '../pages/updateProfile/UpdateProfile';
 import Contact from '../pages/contact/Contact';
 import Jobs from '../pages/jobs/Jobs';
+import EstateDetails from '../pages/Estate_Details/EstateDetails';
+
 
 const router = createBrowserRouter([
     {
@@ -19,6 +21,10 @@ const router = createBrowserRouter([
                 path: "/",
                 element: <Home></Home>,
                 loader:()=> fetch('./categories.json')
+            },
+            {
+                path:"/estate/:id",
+                element:<EstateDetails></EstateDetails>
             },
             {
                 path: "/updateProfile",

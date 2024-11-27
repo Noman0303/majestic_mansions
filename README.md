@@ -21,6 +21,8 @@ Dynamic Content: Featuring dynamically generated property details, including pri
 
 Protected Routes: Utilizing protected routes to secure user-specific pages such as profile updates. Ensuring that only authenticated users can access and modify their personal information.
 
-Live Site Url  :
+Packages used in the project - 
+
+1. Swiper slider
 
 npm package name : 
