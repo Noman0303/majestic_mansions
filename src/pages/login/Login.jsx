@@ -87,7 +87,7 @@ const Login = () => {
 
 
             <div>
-                <div className=" flex-col">
+                <div className=" flex-col my-8 rounded-xl gap-2 ">
                     <div className="text-center mb-10">
                         <p className='mt-8'>Welcome Back!</p>
                         <h1 className="text-5xl font-bold ">Login now!</h1>

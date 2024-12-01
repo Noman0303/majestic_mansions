@@ -57,7 +57,7 @@ const Registration = () => {
         <div>
             <NavBar></NavBar>
 
-            <div className="hero ">
+            <div className="hero my-8 rounded-xl ">
                 <div className="hero-content flex-col lg:flex-row-reverse " >
                     <div className="text-center lg:ml-6 lg:text-left">
                         <h1 className="text-5xl font-bold">Welcome to Majestic Mansions!</h1>

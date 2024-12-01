@@ -20,7 +20,7 @@ const EstateCard = ({ estate }) => {
             <img
                 src={image}
                 alt="estate image"
-                className='w-auto rounded-xl' />
+                className='w-auto max-h-64 rounded-xl' />
             <h2 className="text-xl font-semibold ">{estate_title}</h2>
             <div>
                 {

@@ -34,7 +34,7 @@ const NavBar = () => {
 
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-200 rounded-xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -57,7 +57,7 @@ const NavBar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-base lg:text-xl ">Majestic Mansions</a>
+                <a className=" text-base md:text-xl lg:text-2xl font-semibold">Majestic Mansions</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -70,18 +70,18 @@ const NavBar = () => {
                         user ?
                             <div className="flex items-center space-x-4">
                                 <span className='relative' onMouseEnter={() => setIshovered(true)} onMouseLeave={() => setIshovered(false)}>
-                                    <img src={user.photoURL} className="rounded-full w-8 h-8 inline-block" />
+                                    <img src={user.photoURL} className="rounded-full w-8 h-auto inline-block" />
                                     {isHovered && (
-                                        <span className='absolute top-10 left-0 w-auto p-1 text-xs text-white bg-black rounded-md'>
+                                        <span className='absolute md:right-10 sm:right-6 lg:top-10 lg:left-0 w-auto p-1 text-xs text-white bg-black rounded-md'>
                                             {user.displayName}
                                         </span>
                                     )}
                                 </span>
-                                <a className="btn btn-sm" onClick={handleLogOut}>Log Out</a>
+                                <a className="btn btn-sm lg:btn-base navbar-end lg:text-lg" onClick={handleLogOut}>Log Out</a>
                             </div>
                             :
                             <Link to='/login' >
-                                <button className='btn btn-sm'>Log in</button>
+                                <button className='btn btn-sm lg:btn-base lg:text-lg'>Log in</button>
                             </Link>
                     }
                 </div>
