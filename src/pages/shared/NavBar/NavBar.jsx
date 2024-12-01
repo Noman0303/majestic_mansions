@@ -72,7 +72,7 @@ const NavBar = () => {
                                 <span className='relative' onMouseEnter={() => setIshovered(true)} onMouseLeave={() => setIshovered(false)}>
                                     <img src={user.photoURL} className="rounded-full w-8 h-auto inline-block" />
                                     {isHovered && (
-                                        <span className='absolute md:right-10 sm:right-6 lg:top-10 lg:left-0 w-auto p-1 text-xs text-white bg-black rounded-md'>
+                                        <span className='absolute right-8 md:right-10 lg:right-10 w-auto p-1 text-xs text-white bg-black rounded-md'>
                                             {user.displayName}
                                         </span>
                                     )}
