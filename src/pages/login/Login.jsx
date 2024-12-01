@@ -1,13 +1,13 @@
 import React, { useContext, useState } from 'react'
 
 import { AuthContext } from '../../Provider/AuthProvider'
-import { FaEye, FaEyeSlash} from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
 import { IoLogoGithub } from "react-icons/io";
 
 
-import { ToastContainer, toast } from 'react-toastify'; 
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import NavBar from '../shared/NavBar/NavBar';
 import Footer from '../shared/footer/Footer';
@@ -20,8 +20,11 @@ const Login = () => {
 
 
 
-    const {signInUser, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
+    const { signInUser, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log('location in the login page', location)
 
 
     const handleLogin = e => {
@@ -31,13 +34,15 @@ const Login = () => {
         const password = e.target.password.value;
         console.log(email, password)
 
-        
+
 
 
         signInUser(email, password)
             .then(result => {
                 console.log(result.user);
-                toast.success('Login successful! Welcome!', { autoClose: 3000})
+                toast.success('Login successful! Welcome!', { autoClose: 3000 })
+                // navigate after login
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.error(error);
@@ -52,6 +57,8 @@ const Login = () => {
             .then(result => {
                 console.log(result.user)
                 toast.success('Google login successful! Welcome!', { autoClose: 3000 });
+                // navigate after login
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.error(error);
@@ -64,6 +71,8 @@ const Login = () => {
             .then(result => {
                 console.log(result.user)
                 toast.success('Github login successful! Welcome!', { autoClose: 3000 });
+                // navigate after login
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.error(error)

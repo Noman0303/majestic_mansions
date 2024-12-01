@@ -24,5 +24,7 @@ Protected Routes: Utilizing protected routes to secure user-specific pages such 
 Packages used in the project - 
 
 1. Swiper slider
+2. Animate.css
+3. AOS Packages
 
 npm package name : 

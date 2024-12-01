@@ -6,6 +6,7 @@ import Banner from './Banner'
 import { useLoaderData } from 'react-router-dom'
 import EstateCard from './EstateCard'
 
+
 const Home = () => {
 
   const estates = useLoaderData();
@@ -14,23 +15,24 @@ const Home = () => {
   return (
     <div>
       <Header></Header>
-        <Banner></Banner>
+      <Banner></Banner>
 
-        {/*  Estate container*/}
 
-        <h2 className=" text-lg md:text-2xl lg:text-4xl font-semibold my-6 text-center">Estates</h2>
-        <div className=' grid md:grid-cols-2 lg:grid-cols-3 gap-2 p-2'>
-        {
-          estates.map (estate =>
+      {/*  Estate container*/}
+
+      <h2 className=" text-lg md:text-2xl lg:text-4xl font-semibold my-6 text-center">Estates</h2>
+      <div className=' grid md:grid-cols-2 lg:grid-cols-3 gap-2 p-2'>
+        {Array.isArray(estates) ?
+          estates.map(estate =>
             <EstateCard
-            key = {estate.id}
-            estate = {estate}
-            ></EstateCard>
-          )
+              key={estate.id}
+              estate={estate}
+            ></EstateCard>)
+          : (<p>Loading estates... <span className="loading loading-spinner loading-lg"></span> </p>)
         }
-        </div>
-        
-        <Footer></Footer>
+      </div>
+
+      <Footer></Footer>
     </div>
   )
 }

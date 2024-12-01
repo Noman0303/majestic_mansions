@@ -1,5 +1,5 @@
 import React from 'react'
-import {createBrowserRouter} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Root from '../layouts/Root/Root';
 import Home from '../pages/Home/Home';
 import UserProfile from '../pages/userProfile/UserProfile';
@@ -10,6 +10,7 @@ import UpdateProfile from '../pages/updateProfile/UpdateProfile';
 import Contact from '../pages/contact/Contact';
 import Jobs from '../pages/jobs/Jobs';
 import EstateDetails from '../pages/Estate_Details/EstateDetails';
+import PrivateRoute from './PrivateRoute';
 
 
 const router = createBrowserRouter([
@@ -20,15 +21,23 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader:()=> fetch('./categories.json')
+                loader: () => fetch('../categories.json')
             },
             {
-                path:"/estate/:id",
-                element:<EstateDetails></EstateDetails>
+                path: "/estate/:id",
+                element: <PrivateRoute>
+                <EstateDetails></EstateDetails>
+                </PrivateRoute>,
+                loader: () => fetch('../categories.json')
+
             },
             {
                 path: "/updateProfile",
-                element: <UpdateProfile></UpdateProfile>
+                element: <PrivateRoute>
+                    <UpdateProfile></UpdateProfile>
+                </PrivateRoute>
+
+
             },
             {
                 path: "/userProfile",

@@ -35,7 +35,7 @@ const Banner = () => {
                 modules={[EffectCoverflow, Pagination]}
                 className="mySwiper"
             >
-                <SwiperSlide><img src="https://i.ibb.co.com/y6DVsDj/outdoor-deck-2.jpg" className='w-full max-h-96 rounded-xl ' /></SwiperSlide>
+                <SwiperSlide><img src="https://i.ibb.co.com/y6DVsDj/outdoor-deck-2.jpg" className='w-full max-h-96 rounded-xl' /></SwiperSlide>
                 <SwiperSlide><img src="https://i.ibb.co.com/BK4shGB/todd-kent-178j8t-Jr-Nlc-unsplash.jpg" className='w-full  max-h-96 rounded-xl ' /></SwiperSlide>
                 <SwiperSlide><img src="https://i.ibb.co.com/mhMKXMy/abby-rurenko-u-OYak90r4-L0-unsplash.jpg" className='w-full max-h-96 rounded-xl' /></SwiperSlide>
                 <SwiperSlide><img src="https://i.ibb.co.com/236kNS4/evelyn-paris-XJn-P4-L958ds-unsplash.jpg" className='w-full max-h-96 rounded-xl ' /></SwiperSlide>

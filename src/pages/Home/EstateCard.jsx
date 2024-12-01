@@ -5,12 +5,14 @@ import { Link } from 'react-router-dom';
 
 const EstateCard = ({ estate }) => {
 
-    const { estate_title, image, id, segment_name, price, status, area, location, facilities, description } = estate;
+    const { estate_title, image, id, segment_name, price, status, area,  description } = estate;
+
+    console.log('estate:',estate)
 
     return (
         <div className=" card shadow-2xl mb-4 bg-base-100 w-full p-4 relative">
 
-            <div className='felx absolute right-5 top-6'>
+            <div className='flex absolute right-5 top-6'>
                 <div className="badge bg-gray-200  font-semibold">{segment_name}</div>
                 <div className="badge  bg-gray-200  ml-4 font-semibold items-center">{status}</div>
             </div>
