@@ -15,7 +15,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const Banner = () => {
     return (
-        <div className='my-6'>
+        <div className='my-6 relative z-10'>
 
             <Swiper
                 effect={'coverflow'}
